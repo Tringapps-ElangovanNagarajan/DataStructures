@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 class Queue {
 	class Node{
 		int data;
