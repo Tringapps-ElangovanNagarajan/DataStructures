@@ -11,7 +11,8 @@ class Queue {
 		}
 	}
 	
-	Node front,rear; 
+	Node front,rear;
+	
 	
 	//constructor
 	public Queue(){
@@ -23,7 +24,7 @@ class Queue {
 		if(front==null)
 			front = newNode;
 		else
-			rear.next = newNode	;
+			rear.next = newNode;
 		rear = newNode;
 		
 	}
