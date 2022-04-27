@@ -13,7 +13,6 @@ class Queue {
 	
 	Node front,rear;
 	
-	
 	//constructor
 	public Queue(){
 		front = null;
