@@ -1,5 +1,7 @@
-
+package com.example;
 import java.util.Scanner;
+
+import com.example.List.Node;
 
 class Queue {
 	class Node{
@@ -14,7 +16,8 @@ class Queue {
 	
 	Node front,rear; 
 	
-	Queue(){
+	//constructor
+	public Queue(){
 		front = null;
 		rear = null;
 	}
@@ -36,7 +39,14 @@ class Queue {
 		if(front==null) 
 			rear=null;
 		return temp;
-		
+	}
+	void display() {
+		Node temp = front;
+		while(temp!=null) {
+			System.out.print( temp.data +" " );
+			temp = temp.next; 
+		}
+		System.out.println("\n");
 	}
 }
 public class QueueList {
@@ -44,16 +54,20 @@ public class QueueList {
 		Queue li=new Queue();
 		Scanner sc=new Scanner(System.in);
 		while(true) {
-		System.out.println("1.Enqueue");
-		System.out.println("2.Deque");
+		System.out.println("CLick 1 for Enqueue");
+		System.out.println("Click 2 for Dequeue");
+		System.out.println("Click 3 for Display");
 		int choice=sc.nextInt();
 		switch(choice) {
 		case 1:System.out.print("Enter your data = ");
 		   int val=sc.nextInt();
 		   li.enqueue(val);
 		   break;
-		case 2:System.out.println(li.dequeue() + " dequeue from Queue");
+		case 2:System.out.println("Removing the element " + li.dequeue() + " from the queue");
 		       break;
+		case 3:
+			li.display();
+			break;
 		default:
 			System.out.println("You entered the Wrong Choice!Try again");
 		}
