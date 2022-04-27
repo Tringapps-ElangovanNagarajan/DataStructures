@@ -51,6 +51,7 @@ public class QueueList {
 	public static void main(String args[]) {
 		Queue li=new Queue();
 		Scanner sc=new Scanner(System.in);
+		
 		while(true) {
 		System.out.println("CLick 1 for Enqueue");
 		System.out.println("Click 2 for Dequeue");
