@@ -45,6 +45,7 @@ class Queue {
 		System.out.println("\n");
 	}
 }
+
 public class QueueList {
 	public static void main(String args[]) {
 		Queue li=new Queue();
