@@ -1,8 +1,4 @@
-package com.example;
 import java.util.Scanner;
-
-import com.example.List.Node;
-
 class Queue {
 	class Node{
 		int data;
